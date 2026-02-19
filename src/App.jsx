@@ -19,6 +19,7 @@ import Stores from "./pages/Stores";
 import Products from "./pages/Products";
 import Orders from "./pages/Orders";
 import Refunds from "./pages/Refunds";
+import Couriers from "./pages/Couriers";
 import Suppliers from "./pages/Suppliers";
 import Analytics from "./pages/Analytics";
 import Reports from "./pages/Reports";
@@ -107,6 +108,16 @@ export default function App() {
               <ProtectedRoute>
                 <DashboardLayout>
                   <Refunds />
+                </DashboardLayout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/couriers"
+            element={
+              <ProtectedRoute>
+                <DashboardLayout>
+                  <Couriers />
                 </DashboardLayout>
               </ProtectedRoute>
             }
